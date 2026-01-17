@@ -115,8 +115,9 @@ export default function ExperienceOverlay({ isOpen, onClose }: ExperienceOverlay
 
                             {/* Right Side - Visual */}
                             <div className="w-full md:w-1/2 h-full bg-black relative overflow-hidden group">
-                                className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
-                                style={{ backgroundImage: `url(${getBasePath('/images/experience/porsche_center_event.jpg')})` }}
+                                <div
+                                    className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-1000 grayscale group-hover:grayscale-0"
+                                    style={{ backgroundImage: `url(${getBasePath('/images/experience/porsche_center_event.jpg')})` }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />
 
